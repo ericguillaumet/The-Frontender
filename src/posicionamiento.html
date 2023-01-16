@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamiento</title>
+    <style>
+        div {
+            min-width: 250px;
+            min-height: 150px;
+            border: solid 5px red;
+            margin: 5px;
+            position: static;
+            font-size: 50px;
+            text-align: center;
+            line-height: 150px;
+        }
+        
+        .hijo {
+            position: relative; 
+        }
+
+        .nieto {
+            position: absolute;
+            background-color: burlywood;
+            left: 40px;
+            right: 40px;
+            border-color: green
+        }
+
+        .cuatro {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: cyan;
+            border-color: lightgreen;
+        }
+    </style>
+</head>
+<body>
+    <div class="padre">
+        <div class="hijo">
+            <div class="nieto">1</div>
+        </div>
+    </div>
+    <div class="padre">
+        <div class="hijo">
+            <div class="nieto">2</div>
+        </div>
+    </div>
+    <div class="padre">
+        <div class="hijo">
+            <div class="nieto">3</div>
+        </div>
+    </div>
+    <div class="padre">
+        <div class="hijo">
+            <div class="nieto cuatro">4</div>
+        </div>
+    </div>
+
+</body>
+</html>

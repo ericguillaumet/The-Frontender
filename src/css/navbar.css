@@ -1,0 +1,51 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--dark-color);
+    z-index: 99;
+}
+
+.navbar .logo {
+    display: none;
+}
+
+.navbar-list{
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-item {
+    display: inline-block;
+    margin: 0 .25rem;
+    padding: 0;
+}
+
+.navbar-item a {
+    display: block;
+    padding: 1rem;
+}
+
+.navbar-item a:hover {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+}
+
+header {
+    clear: both;
+}
+
+@media (min-width: 780px){
+    .navbar > .logo {
+        display: block;
+        float: left;
+        font-size: 1.5rem;
+        line-height: 3.5rem;
+    }
+    .navbar > .navbar-list {
+        float: right;
+    }
+}
