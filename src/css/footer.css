@@ -6,7 +6,7 @@
     bottom: 0;
 }
 
-.lista-enlaces, .redes-sociales {
+.link-list, .social-media {
     list-style: none;
     padding: 0;
     display: flex;
